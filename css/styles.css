@@ -1,0 +1,44 @@
+html {
+    max-height: 1920px;
+    max-width: 1334px;
+}
+body{
+    background-color:#00001a;
+}
+    
+    
+
+
+#imgcenter {
+        text-align: center;
+    height: 228px;
+    margin: 0px -149px 0px -24px;
+}
+
+.universe {
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    color: chartreuse;
+}
+
+.comparisson {
+        text-align: center;
+    font-family: Orbitron, sans-serif;
+    color: chartreuse;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.myIframe1 {
+    max-height: 400px;
+    max-width: 90%;
+}
+
+.myIframe2 {
+    max-height: 400px;
+    max-width: 10%;
+}
+iframe {
+    height: 500px;
+    width: 100%
+}
