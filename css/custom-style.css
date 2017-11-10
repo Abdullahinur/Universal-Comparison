@@ -1,0 +1,35 @@
+img {
+  height: 250px;
+  width: 250px;
+}
+
+
+form {
+  width: 50%;
+  position: relative;
+  left: 250px;
+  top: 300px;
+  display: none;
+}
+
+#user-height:hover {
+  transition: all 1s ease-in-out 100ms;
+  transform: scale(1.2);
+}
+
+.tester {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#image-hover:hover {
+  transition: all 1s ease-in-out 100ms;
+  transform: scale(1.9);
+}
+
+.one {
+  color: red;
+}
+.seven{
+	color:magenta;
+}
