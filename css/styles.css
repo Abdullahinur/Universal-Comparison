@@ -1,44 +1,183 @@
-html {
-    max-height: 1920px;
-    max-width: 1334px;
+/* {
+  margin: auto;
+  padding: inherit;
+}*/
+
+/* Animations */
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
 }
-body{
-    background-color:#00001a;
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
 }
-    
-    
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    text-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    text-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    text-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+/*OTHER ATTRIBUTES*/
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+body {
+  background-color: #00004d;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#obj3 {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: bounceInRight 1.5s;
+  margin: 0px 0px 0px 0px;
+}
+
+#obj2 {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 3s infinite;
+  margin: 0px 0px 0px 841px;
+}
+
+#obj1 {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: bounceInLeft 1.5s;
+}
+
+#image-hover {
+margin: 339px 1px 38px 231px;
+}
+
+.text-hover{
+  padding-top: 200px;
+}
+.col-md-4{
+  padding-top: 200px;
+  padding-right: 185px;
+  font-family: philosopherregular, monospace;
+}
+/*
+<div class="item">
+  <div class="row">
+    <div class="col-md-8">
+      <img src="img/statueliberty_clipped_rev_1.png" id="image-hover">
+    </div>
+    <div class="col-md-4">
+      <span class="text-hover th-nine">*/
 
 
-#imgcenter {
-        text-align: center;
-    height: 228px;
-    margin: 0px -149px 0px -24px;
+
+
+span {
+  margin:0px 0px 0px 0px;
+}
+.row {
+      height: 900px;
+}
+.logo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .universe {
-    text-align: center;
-    font-family: Orbitron, sans-serif;
-    color: chartreuse;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family: prometheusregular, monospace;
 }
 
-.comparisson {
-        text-align: center;
-    font-family: Orbitron, sans-serif;
-    color: chartreuse;
-    padding: 0px 0px 0px 0px;
-    
+.comparison {
+  margin: 0px 0px 0px -638px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family: prometheusregular, monospace;
 }
 
-.myIframe1 {
-    max-height: 400px;
-    max-width: 90%;
-}
-
-.myIframe2 {
-    max-height: 400px;
-    max-width: 10%;
-}
-iframe {
-    height: 500px;
-    width: 100%
+.carousel {
+  max-height: 352px;
+  min-height: -webkit-fill-available;
 }
